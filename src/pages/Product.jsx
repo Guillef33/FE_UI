@@ -85,7 +85,6 @@ function Product() {
 
             <div className="product-brand-information-container">
               <h3 className="product-page-brand-h3">Description</h3>
-
               <p
                 className={`product-brand-information ${
                   isExpanded ? "expanded" : ""

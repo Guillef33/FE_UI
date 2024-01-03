@@ -83,7 +83,15 @@ function ProductsPage() {
           handleSearchChange={handleSearchChange}
           searchTerm={searchTerm}
         />
+        <div className="product-page-category-wrapper">
+          <h3 className="product-page-brand-h3">Drink Category</h3>
+          <Link to={`/products`}>All</Link>
+        </div>
         <CategoryButtons filterProductsByCategory={filterProductsByCategory} />
+        <div className="product-page-list-wrapper">
+          <h3 className="product-page-brand-h3">Populer</h3>
+          <Link to={`/products`}>See all</Link>
+        </div>
         <ProductList
           filteredProducts={filteredProducts}
           productPrices={productPrices}

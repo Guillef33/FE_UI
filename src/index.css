@@ -189,6 +189,20 @@ body {
 
 }
 
+.product-page-list-wrapper,
+.product-page-category-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-page-list-wrapper a,
+.product-page-category-wrapper a {
+  color: #646464;
+  font-size: 14px;
+  text-decoration: none;
+}
+
 .product-page-sizes h3 {
   margin: 0;
   padding: 20px 0px;
