@@ -77,7 +77,7 @@ const products = [
     substyle: "Indian Pale Ale",
     abv: "6.2%",
     origin: "California",
-    category: "Wine",
+    category: "Beer",
     information:
       "This exceptional IPA is a very well balanced American version of the style. It is also the original “West Coast IPA”, and is still the best selling IPA in California. A beautiful amber hue presents a distinct citrus hop aroma and a full-bodied malt character. A very approachable IPA, this beer is well rounded with distinct hop notes throughout and a subtle weight for “session” drinkability. Pairs very well with peppery/spicy foods, hearty meats, rich seafood & fish, and savory sauces.",
     skus: [

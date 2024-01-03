@@ -51,11 +51,17 @@ function Product() {
     if (productInfo && productInfo.skus.length > 0) {
       const defaultSkuCode = productInfo.skus[0].code;
       handleUpdateStockAndPrice(productInfo.id, defaultSkuCode);
+
+      const intervalId = setInterval(() => {
+        handleUpdateStockAndPrice(productInfo.id, defaultSkuCode);
+      }, 5000);
+
+      return () => clearInterval(intervalId);
     }
   }, [productInfo]);
 
   return (
-    <section>
+    <>
       <Topbar />
       <div>
         {productInfo && (
@@ -76,6 +82,7 @@ function Product() {
                 </p>
               </div>
             </div>
+
             <div className="product-brand-information-container">
               <h3 className="product-page-brand-h3">Description</h3>
 
@@ -108,6 +115,7 @@ function Product() {
                 ))}
               </div>
             </div>
+
             <div className="product-page-bottom">
               <img src="/add-to-bag.svg" alt="Add to bag icon" />
               <button className="product-add-to-cart">Add to cart</button>
@@ -115,7 +123,7 @@ function Product() {
           </div>
         )}
       </div>
-    </section>
+    </>
   );
 }
 
